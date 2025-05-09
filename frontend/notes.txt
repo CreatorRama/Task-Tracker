@@ -1,0 +1,75 @@
+<motion.svg
+              initial={{ scale: 0.8, opacity: 0.8 }}
+              animate={{ scale: [0.8, 1.2, 0.8] }} // Zoom in and out
+              transition={{
+                duration: 2, // Time for one cycle
+                ease: "easeInOut",
+                repeat: Infinity // Infinite loop
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="28px"
+              fill="red"
+            >
+              <path d="M256-240h84l44-122h192l44 122h84L522-720h-84L256-240Zm152-192 70-198h4l70 198H408ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0-640v640-640Z" />
+            </motion.svg>
+
+
+
+             <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="34px"
+      width="28px"
+      fill="#e3e3e3"
+    >
+      {/* ViewBox Animation */}
+      <animate
+        attributeName="viewBox"
+        from="0 -960 960 960"
+        to="193 -744 530 616"
+        dur="2s"
+        repeatCount="indefinite"
+        fill="freeze"
+      />
+      
+      {/* Shape remains the same */}
+      <path d="M256-240h84l44-122h192l44 122h84L522-720h-84L256-240Zm152-192 70-198h4l70 198H408ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0-640v640-640Z" />
+    </svg>
+
+
+
+
+     <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="28px">
+              {/* Define Radial Gradient */}
+              <defs>
+                <radialGradient id="radialGradient" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="blue" />
+                  <stop offset="100%" stop-color="lightblue" />
+                </radialGradient>
+              </defs>
+
+              {/* ViewBox Animation */}
+              <animate
+                attributeName="viewBox"
+                from="0 -960 960 960"
+                to="193 -744 530 616"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+
+              {/* Fill Animation */}
+              <animate
+                attributeName="fill"
+                from="green"
+                to="url(#radialGradient)"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+
+              {/* Shape remains the same */}
+              <path
+                d="M256-240h84l44-122h192l44 122h84L522-720h-84L256-240Zm152-192 70-198h4l70 198H408ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0-640v640-640Z"
+                fill="url(#radialGradient)"
+              />
+            </svg>

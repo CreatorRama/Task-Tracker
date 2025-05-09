@@ -1,0 +1,99 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+
+# Testing
+/coverage
+
+# Production builds
+/dist
+/build
+dist-ssr
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
+
+# Vite specific
+.vite/
+
+# MongoDB data files
+/data/db
+
+# PostgreSQL
+*.dump
+
+# Debug files
+npm-debug.log
+yarn-error.log
+
+# Temp files
+*.tmp
+*.bak
+.temp
+.cache
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Frontend generated files
+/public/hot
+/public/storage
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# ESLint cache
+.eslintcache
+
+# Storybook
+/storybook-static
+
+# Bundle size analysis
+/stats.html
+/stats.json
+
+# Netlify/Vercel deployment files
+.netlify/
+.vercel/
+.now/
+
+# Backend uploads
+/uploads
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Include these files even if they match patterns above
+!.env.example

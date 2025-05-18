@@ -80,22 +80,6 @@ const Dashboard = () => {
               <Card className="hover:shadow-lg transition-shadow duration-200">
                 <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
                 
-                <div className="mb-3">
-                  <div className="flex justify-between text-sm text-gray-600 mb-1">
-                    <span>Progress</span>
-                    <span>{calculateProjectProgress(project)}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5">
-                    <div 
-                      className="bg-blue-600 h-2.5 rounded-full" 
-                      style={{ width: `${calculateProjectProgress(project)}%` }}
-                    ></div>
-                  </div>
-                </div>
-                
-                <div className="flex justify-between text-sm text-gray-600">
-                  <span>{getCompletedTasksCount(project)} / {getTotalTasksCount(project)} tasks completed</span>
-                </div>
               </Card>
             </Link>
           ))}

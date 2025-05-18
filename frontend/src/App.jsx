@@ -8,7 +8,7 @@ import Footer from './components/Layout/Footer';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Dashboard from './components/Dashboard/Dashboard';
-import ProjectList from './components/Projects/ProjectList';
+// import ProjectList from './components/Projects/ProjectList';
 import CreateProject from './components/Projects/CreateProject';
 import TaskList from './components/Tasks/TaskList';
 import TaskDetails from './components/Tasks/TaskDetails';
@@ -33,7 +33,7 @@ const App = () => {
                   <Route path="/" element={<PrivateRoute />}>
                     <Route index element={<Navigate to="/dashboard" replace />} />
                     <Route path="dashboard" element={<Dashboard />} />
-                    <Route path="projects" element={<ProjectList />} />
+                    {/* <Route path="projects" element={<ProjectList />} /> */}
                     <Route path="projects/new" element={<CreateProject />} />
                     <Route path="projects/:projectId" element={<TaskList />} />
                     <Route path="projects/:projectId/tasks/:taskId" element={<TaskDetails />} />

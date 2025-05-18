@@ -14,7 +14,7 @@ const Sidebar = () => {
         <ul className="space-y-2">
           <li>
             <NavLink
-              to="/dashboard"
+              to="/projects"
               className={({ isActive }) =>
                 `block p-2 rounded-md transition-colors duration-200 ${
                   isActive ? 'bg-blue-600' : 'hover:bg-gray-700'
@@ -22,7 +22,7 @@ const Sidebar = () => {
               }
               end
             >
-              Dashboard
+              Projects
             </NavLink>
           </li>
           <li>

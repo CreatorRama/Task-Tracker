@@ -4,6 +4,7 @@ import Card from '../common/Card';
 import { formatDate } from '../../utils/formateDate';
 
 const ProjectCard = ({ project }) => {
+  console.log(project);
   const getCompletedTasksCount = () => {
     if (!project.tasks) return 0;
     return project.tasks.filter(task => task.status === 'completed').length;

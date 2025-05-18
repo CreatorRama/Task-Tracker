@@ -47,7 +47,7 @@ const Login = () => {
     
     try {
       await login(credentials);
-      navigate('/dashboard');
+      navigate('/projects');
     } catch (error) {
       if (error.field) {
         setErrors({ ...errors, [error.field]: error.message });

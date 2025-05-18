@@ -10,7 +10,7 @@ const ProjectList = () => {
 
   useEffect(() => {
     fetchProjects();
-  }, [fetchProjects]);
+  }, [projects]);
 
   if (loading) {
     return (

@@ -4,6 +4,7 @@ import Card from '../common/Card';
 import { formatDate } from '../../utils/formateDate';
 
 const ProjectCard = ({ project }) => {
+  console.log("ram");
   const getCompletedTasksCount = () => {
     if (!project.tasks) return 0;
     return project.tasks.filter(task => task.status === 'completed').length;
@@ -38,7 +39,7 @@ const ProjectCard = ({ project }) => {
         </div>
         
         <div className="flex justify-between text-sm text-gray-600">
-          <span>{getCompletedTasksCount()} / {getTotalTasksCount()} tasks completed</span>
+          <span>{getCompletedTasksCount()} / {getTotalTasksCount()} tasks completed yet</span>
           <span>Created: {formatDate(project.createdAt)}</span>
         </div>
       </Link>

@@ -80,6 +80,14 @@ const Dashboard = () => {
               <Card className="hover:shadow-lg transition-shadow duration-200">
                 <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
                 
+                <div className="mb-3">
+                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                    <p style={{whiteSpace:"pre-wrap",wordBreak:"break-word"}}>{project.description}</p>
+                  </div>
+                  
+                </div>
+                
+    
               </Card>
             </Link>
           ))}

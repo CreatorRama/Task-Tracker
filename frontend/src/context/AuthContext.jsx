@@ -22,7 +22,8 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       setError(null);
       const data = await login(credentials);
-      setUser(data.user);
+      console.log(data.data);
+      setUser(data.data);
       return data;
     } catch (err) {
       setError(err.message || 'Login failed');

@@ -9,6 +9,7 @@ import LoadingSpinner from '../common/LoadingSpinner';
 const Dashboard = () => {
   const { projects, loading, error, fetchProjects } = useProjects();
   console.log(projects);
+  console.log(projects);
   console.log(projects.data);
   const { user } = useAuth();
 

@@ -27,7 +27,9 @@ export const logout = () => {
 
 export const getCurrentUser = () => {
   const userStr = localStorage.getItem('user');
-  return userStr ? JSON.parse(userStr) : null;
+ 
+  if(userStr==='undefined') return ''
+  return userStr ? JSON.parse(userStr): null;
 };
 
 

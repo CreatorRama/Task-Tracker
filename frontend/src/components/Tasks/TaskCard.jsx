@@ -83,7 +83,7 @@ const TaskCard = ({ task, projectId, onTaskUpdated, onTaskDeleted }) => {
        
         <div>
           <h3 className="text-lg font-semibold mb-1">{task.title}</h3>
-          <p className="text-gray-600 mb-2">{task.description}</p>
+          <p className="text-gray-600 mb-2" style={{whiteSpace:"pre-wrap",wordBreak:"break-word"}}>{task.description}</p>
           
           <div className="flex flex-wrap gap-2 mb-2">
             {getStatusBadge()}
